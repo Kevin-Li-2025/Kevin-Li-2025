@@ -1,6 +1,6 @@
 # Hi, I'm Kevin
 
-I am a second-year Artificial Intelligence student in the School of Computer Science at the University of Birmingham, with a 4.0 GPA. I build and study large language model systems, with a focus on post-training, evaluation, retrieval, tool use, and trustworthy agent infrastructure.
+I build and study large language model systems, with a focus on post-training, evaluation, retrieval, tool use, and trustworthy agent infrastructure.
 
 My current work sits between engineering and research: turning model behavior into measurable systems, building reproducible evaluation pipelines, and designing infrastructure that makes agentic workflows traceable, verifiable, and useful for further training.
 
