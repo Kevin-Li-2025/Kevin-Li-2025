@@ -1,4 +1,4 @@
-# Kevin Li
+# Yin Li
 
 I build reproducible LLM systems where model behavior can be measured, traced, and improved.
 
