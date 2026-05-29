@@ -4,7 +4,7 @@ I build reproducible LLM systems where model behavior can be measured, traced, a
 
 [Personal site](https://kevin-li-2025.github.io/) · [GitHub](https://github.com/Kevin-Li-2025)
 
-I study Artificial Intelligence at the University of Birmingham and focus on the engineering layer around large language models: post-training data, retrieval evaluation, tool-use traces, verifiers, and benchmark infrastructure.
+My work focuses on the engineering layer around large language models: post-training data, retrieval evaluation, tool-use traces, verifiers, and benchmark infrastructure.
 
 ## Current Direction
 
@@ -43,5 +43,4 @@ I study Artificial Intelligence at the University of Birmingham and focus on the
 ## Contact
 
 - Website: [kevin-li-2025.github.io](https://kevin-li-2025.github.io/)
-- University: University of Birmingham, School of Computer Science
 - Interests: LLM systems, AI agents, post-training, evaluation, AI for Science
