@@ -1,54 +1,47 @@
-# Hi, I'm Kevin
+# Kevin Li
 
-I build and study large language model systems, with a focus on post-training, evaluation, retrieval, tool use, and trustworthy agent infrastructure.
+I build reproducible LLM systems where model behavior can be measured, traced, and improved.
 
-My current work sits between engineering and research: turning model behavior into measurable systems, building reproducible evaluation pipelines, and designing infrastructure that makes agentic workflows traceable, verifiable, and useful for further training.
+[Personal site](https://kevin-li-2025.github.io/) · [GitHub](https://github.com/Kevin-Li-2025)
 
-## Current Focus
+I study Artificial Intelligence at the University of Birmingham and focus on the engineering layer around large language models: post-training data, retrieval evaluation, tool-use traces, verifiers, and benchmark infrastructure.
 
-- Large language model post-training: SFT, DPO/GRPO, process rewards, and tool-use policy learning
-- Retrieval and search systems: RAG evaluation, citation grounding, query planning, and regression testing
-- Agent infrastructure: execution traces, validators, reward-labeled trajectories, and expert-escalation policies
-- Efficient inference and model systems: quantization, serving, GPU utilization, and reproducible benchmarking
-- AI for Science infrastructure: scientific workflow verification, reproducibility, and trace-to-reward learning
+## Current Direction
 
-## Selected Projects
+- LLM post-training: SFT, DPO/GRPO, process rewards, verifier-guided inference, and tool-use policy learning
+- Retrieval and search: RAG evaluation, citation grounding, query planning, and regression testing
+- Agent infrastructure: execution traces, validators, reward-labeled trajectories, and expert-escalation boundaries
+- Efficient model systems: quantization, serving, GPU utilization, and reproducible benchmarking
+- AI for Science infrastructure: scientific workflow verification, replay, and trace-to-reward learning
 
-### SciTrace-RL
-Trace, validation, and reward infrastructure for scientific agents.  
-The system records tool calls, artifacts, citations, validation results, and failure modes, then converts execution traces into training-ready feedback data.
+## Selected Systems
 
-- 15-case adversarial evaluation suite
-- DeepSeek/OpenAI-compatible semantic judge
-- deterministic validators for citation integrity, replay, constraints, and claim-evidence alignment
-- expert-required boundary cases for high-fidelity simulation or wet-lab validation
+| Project | What it demonstrates | Evidence surface |
+| --- | --- | --- |
+| [L20-CodeForge](https://github.com/Kevin-Li-2025/L20-CodeForge) | Single-L20 post-training and verifier-guided inference for executable code benchmarks | Reproduction scripts, artifact hashes, result boundaries |
+| [NL2SQL](https://github.com/Kevin-Li-2025/NL2SQL) | Text-to-SQL fine-tuning and multi-path inference with Qwen2.5-Coder-7B | Spider/BIRD-style benchmark runs, cost curves, official export paths |
+| [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota) | FinanceMTEB Chinese reranking snapshot with Qwen3-Reranker-8B | Reported 0.9978 MAP run, CI checks, leaderboard snapshot |
+| [SignalRAG](https://github.com/Kevin-Li-2025/SignalRAG) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
+| [SciTrace-RL](https://github.com/Kevin-Li-2025/SciTrace_RL) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
+| [CodeConquerors](https://github.com/Kevin-Li-2025/CodeConquerors) | Accessibility-aware urban routing across API, graph workers, and mobile client | .NET/PostGIS/Redis/Kafka stack, profiling, Kubernetes path |
 
-### NL2SQL
-Reproducible text-to-SQL fine-tuning and multi-path inference benchmark using Qwen2.5-Coder-7B on Spider/BIRD-style tasks.
+## Engineering Standards
 
-### repro-llm-stack
-Reproducible post-training pipeline for 7B-class language models, including data manifests, SFT/DPO preparation, data quality checks, and lm-eval integration.
-
-### SignalRAG
-Search and retrieval workbench with query planning, multi-source retrieval, citation checking, corrective retrieval, and extractive fallback when model APIs are unavailable.
-
-### CodeGraph
-AST-driven GraphRAG for codebases, using deterministic program structure rather than plain text chunks for architectural reasoning.
+- Every serious project should expose setup, reproduce, expected output, and known limitations.
+- Claims should be tied to commit-stable artifacts, data versions, hardware notes, and evaluation commands.
+- Agent and RAG systems should preserve evidence: tool calls, retrieved sources, validators, failures, and escalation points.
+- Benchmarks should be useful for regression testing, not just one-off reporting.
 
 ## Technical Stack
 
-**Languages:** Python, TypeScript, SQL, Swift  
-**ML Systems:** PyTorch, Transformers, LoRA/QLoRA, vLLM, lm-eval, Triton  
-**LLM Applications:** RAG, retrieval evaluation, tool use, citation verification, structured generation  
-**Infra:** FastAPI, SQLite, Docker, GitHub Actions, Make, CLI tooling  
-**Research Interests:** post-training, process supervision, agent evaluation, scientific reproducibility, AI4S infrastructure
-
-## What I Care About
-
-I am interested in systems where model outputs are not treated as the final product. I care about the execution layer around models: what evidence was used, which tools were called, whether the result can be reproduced, how failures are labeled, and how those traces can improve the next model or agent.
+**Languages:** Python, TypeScript, SQL, Swift, C#  
+**ML systems:** PyTorch, Transformers, LoRA/QLoRA, vLLM, lm-eval, Triton  
+**LLM applications:** RAG, retrieval evaluation, tool use, citation verification, structured generation  
+**Infrastructure:** FastAPI, SQLite, Docker, GitHub Actions, Make, CLI tooling, PostGIS, Redis/Kafka  
+**Research interests:** post-training, process supervision, agent evaluation, scientific reproducibility, AI4S infrastructure
 
 ## Contact
 
-- GitHub: [Kevin-Li-2025](https://github.com/Kevin-Li-2025)
+- Website: [kevin-li-2025.github.io](https://kevin-li-2025.github.io/)
 - University: University of Birmingham, School of Computer Science
 - Interests: LLM systems, AI agents, post-training, evaluation, AI for Science
