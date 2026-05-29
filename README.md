@@ -19,11 +19,11 @@ My work focuses on the engineering layer around large language models: post-trai
 | Project | What it demonstrates | Evidence surface |
 | --- | --- | --- |
 | [L20-CodeForge](https://github.com/Kevin-Li-2025/L20-CodeForge) | Single-L20 post-training and verifier-guided inference for executable code benchmarks | Reproduction scripts, artifact hashes, result boundaries |
-| [NL2SQL](https://github.com/Kevin-Li-2025/NL2SQL) | Text-to-SQL fine-tuning and multi-path inference with Qwen2.5-Coder-7B | Spider/BIRD-style benchmark runs, cost curves, official export paths |
+| [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark) | Text-to-SQL fine-tuning and multi-path inference with Qwen2.5-Coder-7B | Spider/BIRD-style benchmark runs, cost curves, official export paths |
 | [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota) | FinanceMTEB Chinese reranking snapshot with Qwen3-Reranker-8B | Reported 0.9978 MAP run, CI checks, leaderboard snapshot |
-| [SignalRAG](https://github.com/Kevin-Li-2025/SignalRAG) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
-| [SciTrace-RL](https://github.com/Kevin-Li-2025/SciTrace_RL) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
-| [CodeConquerors](https://github.com/Kevin-Li-2025/CodeConquerors) | Accessibility-aware urban routing across API, graph workers, and mobile client | .NET/PostGIS/Redis/Kafka stack, profiling, Kubernetes path |
+| [signal-rag](https://github.com/Kevin-Li-2025/signal-rag) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
+| [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
+| [accessible-route-planner](https://github.com/Kevin-Li-2025/accessible-route-planner) | Accessibility-aware urban routing across API, graph workers, and mobile client | .NET/PostGIS/Redis/Kafka stack, profiling, Kubernetes path |
 
 ## Engineering Standards
 
