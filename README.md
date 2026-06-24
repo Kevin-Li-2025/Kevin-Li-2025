@@ -12,6 +12,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 - [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413): merged benchmarking reliability fix for single pruned autotune configs.
 - [Apache TVM PR #19818](https://github.com/apache/tvm/pull/19818): merged ONNX frontend correctness fix preserving BatchNormalization inference mode.
 - [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140): merged CUDA/FMHA kernel initialization fix for large-head variants.
+- [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023): reported a negative-stride DLPack crash in `torch.from_dlpack`, triaged as a crash/error-checking/numpy/dlpack bug with a follow-up fix PR opened.
 
 ## Operating Thesis
 
@@ -28,7 +29,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | Retrieval and ranking evaluation | Query planning, citation checks, recall/MRR regression tests, reranker snapshots | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag), [retrieval-eval](https://github.com/Kevin-Li-2025/retrieval-eval), [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota), [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) |
 | Structured generation benchmarks | NL2SQL, ordering reliability, multi-path inference, cost and robustness reporting | [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark), [order-delta-bench](https://github.com/Kevin-Li-2025/order-delta-bench) |
 | Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, trace review | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [CodeGraph](https://github.com/Kevin-Li-2025/CodeGraph) |
-| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
+| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
 
 ## Selected Systems
 
@@ -39,8 +40,8 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota) | FinanceMTEB Chinese reranking snapshot with Qwen3-Reranker-8B | Public report, CI checks, leaderboard snapshot context |
 | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
 | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
-| [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) | Reproducible CoREB retrieval benchmark snapshot | CI-backed artifacts and result provenance |
-| [Upstream model-system PRs](https://github.com/search?q=author%3AKevin-Li-2025+is%3Apr+is%3Amerged&type=pullrequests) | Merged fixes in Triton, Apache TVM, and ONNX Runtime | Runtime/cache correctness, benchmarking reliability, ONNX frontend behavior, CUDA/FMHA initialization |
+| [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) | Reproducible CoREB retrieval benchmark snapshot | CI-backed artifacts, result provenance, and [upstream submission issue](https://github.com/hq-bench/coreb/issues/1) |
+| [Upstream model-system PRs and reports](https://github.com/search?q=author%3AKevin-Li-2025+is%3Apr+is%3Amerged&type=pullrequests) | Merged fixes in Triton, Apache TVM, ONNX Runtime, plus a PyTorch crash report | Runtime/cache correctness, benchmarking reliability, ONNX frontend behavior, CUDA/FMHA initialization, DLPack crash triage |
 
 ## Engineering Standard
 
