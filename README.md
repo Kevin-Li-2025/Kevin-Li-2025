@@ -8,7 +8,10 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 
 ## Upstream Open Source
 
-- [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411): merged runtime cache-group integrity fix that treats incomplete cache groups as misses; passed Triton's full integration CI across NVIDIA, AMD, and macOS runners.
+- [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411): merged runtime cache-group integrity fix that treats incomplete cache groups as misses.
+- [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413): merged benchmarking reliability fix for single pruned autotune configs.
+- [Apache TVM PR #19818](https://github.com/apache/tvm/pull/19818): merged ONNX frontend correctness fix preserving BatchNormalization inference mode.
+- [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140): merged CUDA/FMHA kernel initialization fix for large-head variants.
 
 ## Operating Thesis
 
@@ -24,8 +27,8 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | Post-training and verifier-guided inference | SFT/DPO-style pipelines, executable checks, reward-labeled traces, benchmark exports | [L20-CodeForge](https://github.com/Kevin-Li-2025/L20-CodeForge), [repro-llm-stack](https://github.com/Kevin-Li-2025/repro-llm-stack) |
 | Retrieval and ranking evaluation | Query planning, citation checks, recall/MRR regression tests, reranker snapshots | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag), [retrieval-eval](https://github.com/Kevin-Li-2025/retrieval-eval), [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota), [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) |
 | Structured generation benchmarks | NL2SQL, ordering reliability, multi-path inference, cost and robustness reporting | [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark), [order-delta-bench](https://github.com/Kevin-Li-2025/order-delta-bench) |
-| Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, graph memory | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [multi-agent-memory-graphs](https://github.com/Kevin-Li-2025/multi-agent-memory-graphs) |
-| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [bitnet-1p58b-experiments](https://github.com/Kevin-Li-2025/bitnet-1p58b-experiments), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
+| Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, trace review | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [CodeGraph](https://github.com/Kevin-Li-2025/CodeGraph) |
+| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
 
 ## Selected Systems
 
@@ -37,7 +40,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
 | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
 | [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) | Reproducible CoREB retrieval benchmark snapshot | CI-backed artifacts and result provenance |
-| [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411) | Merged upstream runtime cache-group integrity fix | Full upstream CI across NVIDIA, AMD, and macOS runners |
+| [Upstream model-system PRs](https://github.com/search?q=author%3AKevin-Li-2025+is%3Apr+is%3Amerged&type=pullrequests) | Merged fixes in Triton, Apache TVM, and ONNX Runtime | Runtime/cache correctness, benchmarking reliability, ONNX frontend behavior, CUDA/FMHA initialization |
 
 ## Engineering Standard
 
