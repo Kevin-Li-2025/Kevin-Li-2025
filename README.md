@@ -16,6 +16,11 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 - [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140): merged CUDA/FMHA kernel initialization fix for large-head variants.
 - [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023): reported a negative-stride DLPack crash in `torch.from_dlpack`, triaged as a crash/error-checking/numpy/dlpack bug with a follow-up fix PR opened.
 
+## UK AI Ecosystem Contributions
+
+- [UK AI Security Institute Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371): ready-for-review, mergeable fix for `bash_session` output capping before JSON-RPC serialization in model-evaluation sandbox tooling.
+- [i.AI Lex PR #87](https://github.com/i-dot-ai/lex/pull/87): ready-for-review, mergeable fix for empty-text document uploads in a UK legal/public-service AI stack, with focused tests and passing security check.
+
 ## Operating Thesis
 
 - Treat every model claim as an artifact-backed systems claim: data version, command, hardware, metric, and failure boundary.
@@ -31,6 +36,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | Retrieval and ranking evaluation | Query planning, citation checks, recall/MRR regression tests, reranker snapshots | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag), [retrieval-eval](https://github.com/Kevin-Li-2025/retrieval-eval), [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota), [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) |
 | Structured generation benchmarks | NL2SQL, ordering reliability, multi-path inference, cost and robustness reporting | [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark), [arabic-small-qa-sota](https://github.com/Kevin-Li-2025/arabic-small-qa-sota), [order-delta-bench](https://github.com/Kevin-Li-2025/order-delta-bench) |
 | Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, trace review | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [CodeGraph](https://github.com/Kevin-Li-2025/CodeGraph) |
+| UK public-sector AI tooling | AISI evaluation sandbox reliability, i.AI legal-agent data-path robustness | [Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371), [i.AI Lex PR #87](https://github.com/i-dot-ai/lex/pull/87) |
 | Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [Ray PR #64184](https://github.com/ray-project/ray/pull/64184), [TorchTitan PR #3456](https://github.com/pytorch/torchtitan/pull/3456), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023), [l20-stack](https://github.com/Kevin-Li-2025/l20-stack), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
 
 ## Selected Systems
