@@ -1,10 +1,10 @@
 # Yin Li
 
-**LLM systems engineer building reproducible evaluation, post-training, retrieval, and traceable agent infrastructure.**
+**LLM systems engineer building reproducible evaluation, post-training, retrieval, traceable agent infrastructure, and upstream AI tooling fixes.**
 
 [Portfolio](https://kevin-li-2025.github.io/) | [Selected repositories](https://github.com/Kevin-Li-2025?tab=repositories)
 
-I work on the engineering layer around model behavior: data pipelines, benchmark harnesses, retrieval diagnostics, verifier-guided inference, trace capture, and regression tests that make LLM systems measurable instead of anecdotal.
+I work on the engineering layer around model behavior: data pipelines, benchmark harnesses, retrieval diagnostics, verifier-guided inference, trace capture, security/correctness bug reports, and regression tests that make LLM systems measurable instead of anecdotal.
 
 ## Upstream Open Source
 
@@ -15,6 +15,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 - [Apache TVM PR #19818](https://github.com/apache/tvm/pull/19818): merged ONNX frontend correctness fix preserving BatchNormalization inference mode.
 - [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140): merged CUDA/FMHA kernel initialization fix for large-head variants.
 - [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667): merged structured-generation parser fix for negative-zero float ranges.
+- [Gradio issue #13556](https://github.com/gradio-app/gradio/issues/13556): reported a `/component_server` multipart upload-limit bypass where `max_file_size` enforcement was skipped; confirmed by maintainers and fixed upstream in [PR #13580](https://github.com/gradio-app/gradio/pull/13580).
 - [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023): reported a negative-stride DLPack crash in `torch.from_dlpack`, triaged as a crash/error-checking/numpy/dlpack bug with a follow-up fix PR opened.
 
 ## UK AI Ecosystem Contributions
@@ -39,7 +40,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | Structured generation benchmarks | NL2SQL, ordering reliability, emotion classification, cost and robustness reporting | [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark), [goemotions-roberta-large-focal](https://github.com/Kevin-Li-2025/goemotions-roberta-large-focal), [order-delta-bench](https://github.com/Kevin-Li-2025/order-delta-bench) |
 | Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, trace review | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [CodeGraph](https://github.com/Kevin-Li-2025/CodeGraph) |
 | UK public-sector AI tooling | AISI evaluation sandbox reliability, i.AI legal-agent data-path robustness, public-sector minuting reliability | [Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371), [i.AI Lex PR #87](https://github.com/i-dot-ai/lex/pull/87), [i.AI Minute PR #60](https://github.com/i-dot-ai/minute/pull/60) |
-| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [Ray PR #64184](https://github.com/ray-project/ray/pull/64184), [TorchTitan PR #3456](https://github.com/pytorch/torchtitan/pull/3456), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667), [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023), [l20-stack](https://github.com/Kevin-Li-2025/l20-stack), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
+| Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes, and AI tooling bug reports | [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [Ray PR #64184](https://github.com/ray-project/ray/pull/64184), [TorchTitan PR #3456](https://github.com/pytorch/torchtitan/pull/3456), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667), [Gradio issue #13556](https://github.com/gradio-app/gradio/issues/13556), [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023), [l20-stack](https://github.com/Kevin-Li-2025/l20-stack), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
 
 ## Selected Systems
 
@@ -53,7 +54,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag) | Retrieval workbench with query planning, citation checks, and extractive fallback | Recall evaluation, source-trust tiers, benchmark examples |
 | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl) | Trace, validation, and reward infrastructure for scientific agents | Adversarial cases, semantic judge, deterministic validators |
 | [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) | Reproducible CoREB retrieval benchmark snapshot | CI-backed artifacts, result provenance, and [upstream submission issue](https://github.com/hq-bench/coreb/issues/1) |
-| [Upstream model-system PRs and reports](https://github.com/search?q=author%3AKevin-Li-2025+is%3Apr+is%3Amerged&type=pullrequests) | Merged fixes in Triton, Ray, PyTorch TorchTitan, Apache TVM, ONNX Runtime, xgrammar, plus a PyTorch crash report | Runtime/cache correctness, autoscaler metrics robustness, LoRA freezing behavior, benchmarking reliability, ONNX frontend behavior, CUDA/FMHA initialization, parser edge cases, DLPack crash triage |
+| [Upstream model-system PRs and reports](https://github.com/search?q=author%3AKevin-Li-2025+is%3Apr+is%3Amerged&type=pullrequests) | Merged fixes in Triton, Ray, PyTorch TorchTitan, Apache TVM, ONNX Runtime, xgrammar, plus confirmed Gradio and PyTorch bug reports | Runtime/cache correctness, autoscaler metrics robustness, LoRA freezing behavior, benchmarking reliability, ONNX frontend behavior, CUDA/FMHA initialization, parser edge cases, upload-limit enforcement, DLPack crash triage |
 
 ## Engineering Standard
 
