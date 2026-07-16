@@ -17,16 +17,11 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 - [Apache TVM PR #19818](https://github.com/apache/tvm/pull/19818): merged ONNX frontend correctness fix preserving BatchNormalization inference mode.
 - [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140): merged CUDA/FMHA kernel initialization fix for large-head variants.
 - [FlashAttention PR #2671](https://github.com/Dao-AILab/flash-attention/pull/2671): merged FA4 CuTe frontend fix for SM120/SM121 compile-time argument handling.
+- [CARLA PR #9791](https://github.com/carla-simulator/carla/pull/9791): merged LiDAR smoke-helper signature fix into the official `ue5-dev` branch.
 - [scikit-learn PR #34380](https://github.com/scikit-learn/scikit-learn/pull/34380): merged Array API/DLPack interop correctness fix avoiding a `torch.from_dlpack` crash for NumPy arrays with negative strides.
 - [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667): merged structured-generation parser fix for negative-zero float ranges.
 - [Gradio issue #13556](https://github.com/gradio-app/gradio/issues/13556): reported a `/component_server` multipart upload-limit bypass where `max_file_size` enforcement was skipped; confirmed by maintainers and fixed upstream in [PR #13580](https://github.com/gradio-app/gradio/pull/13580).
 - [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023): reported a negative-stride DLPack crash in `torch.from_dlpack`, triaged as a crash/error-checking/numpy/dlpack bug with a follow-up fix PR opened.
-
-## UK AI Ecosystem Contributions
-
-- [UK AI Security Institute Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371): ready-for-review, mergeable fix for `bash_session` output capping before JSON-RPC serialization in model-evaluation sandbox tooling.
-- [i.AI Lex PR #87](https://github.com/i-dot-ai/lex/pull/87): ready-for-review, mergeable fix for empty-text document uploads in a UK legal/public-service AI stack, with focused tests and passing security check.
-- [i.AI Minute PR #60](https://github.com/i-dot-ai/minute/pull/60): ready-for-review, mergeable fix for Azure OpenAI structured output handling in public-sector transcription/minuting infrastructure.
 
 ## Operating Thesis
 
@@ -43,7 +38,6 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 | Retrieval and ranking evaluation | Query planning, citation checks, recall/MRR regression tests, reranker snapshots | [signal-rag](https://github.com/Kevin-Li-2025/signal-rag), [arabic-retrieval-lab](https://github.com/Kevin-Li-2025/arabic-retrieval-lab), [finmteb-zh-reranker-sota](https://github.com/Kevin-Li-2025/finmteb-zh-reranker-sota), [coreb-retrieval-sota](https://github.com/Kevin-Li-2025/coreb-retrieval-sota) |
 | Structured generation benchmarks | NL2SQL, ordering reliability, emotion classification, cost and robustness reporting | [nl2sql-benchmark](https://github.com/Kevin-Li-2025/nl2sql-benchmark), [goemotions-roberta-large-focal](https://github.com/Kevin-Li-2025/goemotions-roberta-large-focal), [order-delta-bench](https://github.com/Kevin-Li-2025/order-delta-bench) |
 | Agent trace infrastructure | Scientific workflows, semantic judges, deterministic validators, trace review | [scitrace-rl](https://github.com/Kevin-Li-2025/scitrace-rl), [CodeGraph](https://github.com/Kevin-Li-2025/CodeGraph) |
-| UK public-sector AI tooling | AISI evaluation sandbox reliability, i.AI legal-agent data-path robustness, public-sector minuting reliability | [Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371), [i.AI Lex PR #87](https://github.com/i-dot-ai/lex/pull/87), [i.AI Minute PR #60](https://github.com/i-dot-ai/minute/pull/60) |
 | Efficient model systems | Quantization experiments, serving benchmarks, GPU instrumentation, compiler/runtime fixes, and AI tooling bug reports | [scikit-learn PR #34380](https://github.com/scikit-learn/scikit-learn/pull/34380), [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411), [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413), [Ray PR #64184](https://github.com/ray-project/ray/pull/64184), [TorchTitan PR #3456](https://github.com/pytorch/torchtitan/pull/3456), [DataFusion PR #23066](https://github.com/apache/datafusion/pull/23066), [DataFusion PR #23226](https://github.com/apache/datafusion/pull/23226), [FlashAttention PR #2671](https://github.com/Dao-AILab/flash-attention/pull/2671), [ONNX Runtime PR #29140](https://github.com/microsoft/onnxruntime/pull/29140), [TVM PR #19818](https://github.com/apache/tvm/pull/19818), [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667), [Gradio issue #13556](https://github.com/gradio-app/gradio/issues/13556), [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023), [Single-GPU Inference Lab](https://github.com/Kevin-Li-2025/single-gpu-inference-lab), [llm-quant-bench](https://github.com/Kevin-Li-2025/llm-quant-bench), [l20-edu-135m-pretrain](https://github.com/Kevin-Li-2025/l20-edu-135m-pretrain) |
 
 ## Selected Systems
