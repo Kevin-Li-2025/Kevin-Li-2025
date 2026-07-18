@@ -21,6 +21,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 - [scikit-learn PR #34380](https://github.com/scikit-learn/scikit-learn/pull/34380): merged Array API/DLPack interop correctness fix avoiding a `torch.from_dlpack` crash for NumPy arrays with negative strides.
 - [xgrammar PR #667](https://github.com/mlc-ai/xgrammar/pull/667): merged structured-generation parser fix for negative-zero float ranges.
 - [Gradio issue #13556](https://github.com/gradio-app/gradio/issues/13556): reported a `/component_server` multipart upload-limit bypass where `max_file_size` enforcement was skipped; confirmed by maintainers and fixed upstream in [PR #13580](https://github.com/gradio-app/gradio/pull/13580).
+- [PyTorch issue #187284](https://github.com/pytorch/pytorch/issues/187284): independently reproduced and diagnosed a high-priority `torch.compile` forward-mode AD silent-correctness failure, and proposed a dual-input guard; upstream subsequently fixed the issue with a Dynamo eager-fallback in [PR #189644](https://github.com/pytorch/pytorch/pull/189644).
 - [PyTorch issue #188023](https://github.com/pytorch/pytorch/issues/188023): reported a negative-stride DLPack crash in `torch.from_dlpack`, triaged as a crash/error-checking/numpy/dlpack bug with a follow-up fix PR opened.
 
 ## Operating Thesis
