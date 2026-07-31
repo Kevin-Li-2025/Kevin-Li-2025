@@ -8,6 +8,7 @@ I work on the engineering layer around model behavior: data pipelines, benchmark
 
 ## Upstream Open Source
 
+- [Inspect AI PR #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371): merged sandbox JSON-RPC transport fix that safely chunks oversized tool-response frames, preserves host-configured output limits, and isolates continuation storage per UID.
 - [Triton PR #10411](https://github.com/triton-lang/triton/pull/10411): merged runtime cache-group integrity fix that treats incomplete cache groups as misses.
 - [Triton PR #10413](https://github.com/triton-lang/triton/pull/10413): merged benchmarking reliability fix for single pruned autotune configs.
 - [Ray PR #64184](https://github.com/ray-project/ray/pull/64184): merged autoscaler metrics reporter fix for deleted node types.
