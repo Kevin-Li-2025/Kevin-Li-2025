@@ -32,6 +32,7 @@ The links below point to merged pull requests, not unmerged branch claims.
 - [Inspect AI #4371](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4371) — chunked oversized sandbox JSON-RPC responses while preserving host output limits.
 - [Triton #10411](https://github.com/triton-lang/triton/pull/10411) and [#10413](https://github.com/triton-lang/triton/pull/10413) — runtime cache-group integrity and autotune benchmark reliability.
 - [Apache DataFusion #23043](https://github.com/apache/datafusion/pull/23043), [#23066](https://github.com/apache/datafusion/pull/23066), and [#23226](https://github.com/apache/datafusion/pull/23226) — aggregate semantics, spill merge fan-in, and partition-path correctness.
+- [Apache Arrow #10298](https://github.com/apache/arrow-rs/pull/10298) — Flight `LargeList` schema encoding fix.
 - [Ray #64184](https://github.com/ray-project/ray/pull/64184) — autoscaler metrics handling for deleted node types.
 - [PyTorch TorchTitan #3456](https://github.com/pytorch/torchtitan/pull/3456) — LoRA parameter freezing for non-linear modules.
 - [Apache TVM #19818](https://github.com/apache/tvm/pull/19818) — ONNX BatchNormalization inference-mode preservation.
